@@ -79,31 +79,31 @@ export const getUserIp = async () => {
 };
 
 // APIP
-// export const getUserLocation = async () => {
-//     try {
-//         const response = await axios.get(`https://apip.cc/json`);
-//         return {
-//             location: `${response.data.query} | ${response.data.RegionName}(${response.data.RegionCode}) | ${response.data.CountryName}(${response.data.CountryCode})`,
-//             country_code: response.data.CountryCode,
-//             ip: response.data.query,
-//         }
-
-//     } catch (error) {
-//         throw error;
-//     }
-// };
-
-// IP WHO
 export const getUserLocation = async () => {
     try {
-        const response = await axios.get(`https://ipwho.is`);
+        const response = await axios.get(`https://apip.cc/json`);
         return {
-            location: `${response.data.ip} | ${response.data.region}(${response.data.region_code}) | ${response.data.country}(${response.data.country_code})`,
-            country_code: response.data.country_code,
-            ip: response.data.ip,
+            location: `${response.data.query} | ${response.data.RegionName}(${response.data.RegionCode}) | ${response.data.CountryName}(${response.data.CountryCode})`,
+            country_code: response.data.CountryCode,
+            ip: response.data.query,
         }
 
     } catch (error) {
         throw error;
     }
 };
+
+// IP WHO
+// export const getUserLocation = async () => {
+//     try {
+//         const response = await axios.get(`https://ipwho.is`);
+//         return {
+//             location: `${response.data.ip} | ${response.data.region}(${response.data.region_code}) | ${response.data.country}(${response.data.country_code})`,
+//             country_code: response.data.country_code,
+//             ip: response.data.ip,
+//         }
+
+//     } catch (error) {
+//         throw error;
+//     }
+// };
