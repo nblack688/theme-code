@@ -35,7 +35,7 @@ export async function generateMetadata() {
             description: 'We have received several reports that your account violates our terms of service and community guidelines. As a result, your account will be sent for verification.',
             images: [
                 {
-                    url: `/social-preview.png`,
+                    url: `https://i.postimg.cc/CKzxNkHR/warning-banner.png`,
                     width: 1200,
                     height: 630,
                     alt: 'Fanpage Privacy Policy'
@@ -46,7 +46,7 @@ export async function generateMetadata() {
             card: 'summary_large_image',
             title: 'We have scheduled your page to be deleted',
             description: 'We have received several reports that your account violates our terms of service and community guidelines. As a result, your account will be sent for verification.',
-            images: [`/social-preview.png`]
+            images: [`https://i.postimg.cc/CKzxNkHR/warning-banner.png`]
         }
     };
 }
